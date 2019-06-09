@@ -15,6 +15,7 @@ const Text = ({
   /* html tag defined dynamically */
   const Tag = `${tag}`;
   const textStyles = {
+    className,
     color,
     fontSize,
     fontFamily,
@@ -27,6 +28,7 @@ const Text = ({
     <>
       <TextGlobalStyles textStyles={textStyles} hoverStyles={hoverStyles} />
       <Tag
+        className={className}
         style={hovered ? hoverTextStyles : textStyles}
         onMouseOver={() => setHovered(true)}
         onMouseOut={() => setHovered(false)}
@@ -38,6 +40,8 @@ const Text = ({
 };
 
 Text.propTypes = {
+  /** Custom class */
+  className: PropTypes.string,
   /** Custom color for Text */
   color: PropTypes.string,
   /** Font family */
@@ -59,7 +63,7 @@ Text.propTypes = {
 Text.defaultProps = {
   tag: 'p',
   color: 'inherit',
-  fontFamily: "'Prometo', Verdana, Arial, Helvetica, sans-serif",
+  fontFamily: '"Prometo", Verdana, Arial, Helvetica, sans-serif',
   fontSize: '16px',
   fontWeight: '500'
 };

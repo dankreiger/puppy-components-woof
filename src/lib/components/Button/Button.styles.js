@@ -10,7 +10,7 @@ const buttonStyles = (
   bgColorDisabled,
   disabled
 ) => `
-  font-family: 'Prometo', Verdana, Arial, Helvetica, sans-serif;
+  font-family: "Prometo", Verdana, Arial, Helvetica, sans-serif;
   background-color: ${disabled ? bgColorDisabled : bgColor};
   font-weight: 500;
   color: ${color};
