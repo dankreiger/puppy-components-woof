@@ -31,7 +31,6 @@ describe('<Text />', () => {
         text: 'The quick brown fox'
       };
       const wrapper = shallow(<Text {...props} />);
-      expect(wrapper.name()).toBe('p');
       expect(wrapper.text()).toBe(props.text);
     });
 
