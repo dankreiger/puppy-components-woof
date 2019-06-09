@@ -71,7 +71,7 @@ RangeInputCompound.propTypes = {
   rangeMin: PropTypes.string,
   rangeMax: PropTypes.string,
   onInput: () => {},
-  disabled: PropTypes.boolean
+  disabled: PropTypes.any
 };
 
 export default RangeInputCompound;

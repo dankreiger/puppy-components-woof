@@ -4,6 +4,7 @@ import { TextGlobalStyles } from './Text.styles';
 
 const Text = ({
   color,
+  className,
   fontFamily,
   fontSize,
   fontWeight,
@@ -15,7 +16,6 @@ const Text = ({
   /* html tag defined dynamically */
   const Tag = `${tag}`;
   const textStyles = {
-    className,
     color,
     fontSize,
     fontFamily,
