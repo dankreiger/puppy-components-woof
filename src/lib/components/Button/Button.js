@@ -96,19 +96,7 @@ Button.propTypes = {
 Button.defaultProps = {
   onClick: e => e.preventDefault(),
   disabled: false,
-  href: '#',
-  target: '_self',
-  theme: 'dark',
-  tag: 'button',
-  text: 'Click Me',
-  color: '#fff',
-  colorHover: '#fff',
-  colorActive: '#fff',
-  bgColor: puppyCyan,
-  bgColorHover: puppyCyanHover,
-  bgColorActive: puppyBlue,
-  bgColorDisabled: puppyLightGray,
-  customStyles: {}
+  text: 'Click Me'
 };
 
 export default Button;

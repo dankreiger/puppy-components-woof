@@ -15,20 +15,8 @@ describe('<Button />', () => {
   describe('defaults', () => {
     it('has the correct defaults', () => {
       expect(JSON.parse(JSON.stringify(Button.defaultProps))).toEqual({
-        bgColor: '#00ABE7',
-        bgColorActive: '#0070B4',
-        bgColorDisabled: '#B7B7B7',
-        bgColorHover: '#70CFF3',
-        color: '#fff',
-        colorActive: '#fff',
-        colorHover: '#fff',
-        customStyles: {},
-        disabled: false,
-        href: '#',
-        tag: 'button',
-        target: '_self',
         text: 'Click Me',
-        theme: 'dark'
+        disabled: false
       });
     });
   });
@@ -36,7 +24,9 @@ describe('<Button />', () => {
   describe('button anchor tag', () => {
     it('should become an anchor tag when given an "a" tag prop', () => {
       const props = {
-        tag: 'a'
+        tag: 'a',
+        href: '#',
+        target: '_self'
       };
       const wrapper = shallow(<Button {...props} />);
       expect(wrapper.props().href).toBe('#');
