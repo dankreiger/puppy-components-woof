@@ -31,6 +31,7 @@
     "styleguide:build": "styleguidist build",
     "test": "jest",
     "test:coverage": "jest --coverage --forceExit --colors --detectOpenHandles",
+    "test:fix-snapshot": "jest --updateSnapshot",
     "test:watch": "jest --watchAll"
   },
   "husky": {
