@@ -19,7 +19,7 @@ module.exports = {
     [pkg.name]: path.resolve(__dirname, 'src/lib')
   },
   ribbon: {
-    url: 'https://github.com/dankreiger/puppy-components-again',
+    url: 'https://github.com/dankreiger/puppy-components-woof',
     text: 'Puppy Again'
   },
   showSidebar: true,

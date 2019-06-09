@@ -2,9 +2,9 @@
 
 - sample boilerplate for using React with Rollup
 
-[![Build Status](https://travis-ci.org/dankreiger/puppy-components-again.svg?branch=master)](https://travis-ci.org/dankreiger/puppy-components-again)
+[![Build Status](https://travis-ci.org/dankreiger/puppy-components-woof.svg?branch=master)](https://travis-ci.org/dankreiger/puppy-components-woof)
 
-## [Component Playground](https://dankreiger.github.io/puppy-components-again/)
+## [Component Playground](https://dankreiger.github.io/puppy-components-woof/)
 
 ## Usage
 
@@ -13,16 +13,16 @@
    Yarn:
 
    ```sh
-   $ yarn add puppy-components-again
+   $ yarn add puppy-components-woof
    ```
 
    NPM:
 
    ```sh
-   $ npm install puppy-components-again
+   $ npm install puppy-components-woof
    ```
 
-2. Import the component(s) you want to use. Visit the [playground](https://dankreiger.github.io/puppy-components-again/) for usage examples and component docs.
+2. Import the component(s) you want to use. Visit the [playground](https://dankreiger.github.io/puppy-components-woof/) for usage examples and component docs.
 
 ---
 

@@ -4,7 +4,7 @@ RangeInput examples:
 
 ```js
 import { useState } from 'react';
-import { RangeInput } from 'puppy-components-again';
+import { RangeInput } from 'puppy-components-woof';
 
 const renderVal = val => <pre style={{textAlign: 'center'}}><code>{val}</code></pre>
 
@@ -27,7 +27,7 @@ const App = () => {
 
 ```js
 import { useState } from 'react';
-import { RangeInput } from 'puppy-components-again';
+import { RangeInput } from 'puppy-components-woof';
 
 const fmt = val => (
   val.map((num, i) => {
