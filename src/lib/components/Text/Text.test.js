@@ -11,16 +11,6 @@ describe('<Text />', () => {
     });
   });
 
-  describe('defaults', () => {
-    it('returns expected default props', () => {
-      expect(Text.defaultProps).toEqual({
-        tag: 'p',
-        fontFamily: '"Prometo", Verdana, Arial, Helvetica, sans-serif',
-        fontWeight: '500'
-      });
-    });
-  });
-
   describe('custom', () => {
     it('allows custom html tag', () => {
       let props = {

@@ -61,10 +61,4 @@ Text.propTypes = {
   hoverStyles: PropTypes.object
 };
 
-Text.defaultProps = {
-  tag: 'p',
-  fontFamily: '"Prometo", Verdana, Arial, Helvetica, sans-serif',
-  fontWeight: '500'
-};
-
 export default Text;
