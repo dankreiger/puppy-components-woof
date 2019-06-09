@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Slider, Rail, Handles, Tracks } from 'react-compound-slider';
 import { SliderRail, Handle, Track } from './rangeInputCustomComponents';
-import { puppyLightGray } from '../../../shared/colors';
 import { RangeInputCompoundWrapper } from './RangeInputCompound.styles';
 
 const RangeInputCompound = ({ rangeMin, rangeMax, onInput, disabled }) => {
@@ -65,6 +65,13 @@ const RangeInputCompound = ({ rangeMin, rangeMax, onInput, disabled }) => {
       </Slider>
     </RangeInputCompoundWrapper>
   );
+};
+
+RangeInputCompound.propTypes = {
+  rangeMin: PropTypes.string,
+  rangeMax: PropTypes.string,
+  onInput: () => {},
+  disabled: PropTypes.boolean
 };
 
 export default RangeInputCompound;
