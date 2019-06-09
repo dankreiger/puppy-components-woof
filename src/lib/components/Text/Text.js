@@ -64,7 +64,6 @@ Text.propTypes = {
 Text.defaultProps = {
   tag: 'p',
   fontFamily: '"Prometo", Verdana, Arial, Helvetica, sans-serif',
-  fontSize: '16px',
   fontWeight: '500'
 };
 

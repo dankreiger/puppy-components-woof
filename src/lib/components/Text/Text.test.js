@@ -16,7 +16,6 @@ describe('<Text />', () => {
       expect(Text.defaultProps).toEqual({
         tag: 'p',
         fontFamily: '"Prometo", Verdana, Arial, Helvetica, sans-serif',
-        fontSize: '16px',
         fontWeight: '500'
       });
     });
