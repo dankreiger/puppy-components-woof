@@ -1,0 +1,18 @@
+/* fonts */
+@font-face {
+  /* light */
+  font-family: 'Prometo';
+  src: url('/styleguide/assets/fonts/prometo/puppy_lt.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  /* medium */
+  font-family: 'Prometo';
+  src: url('/styleguide/assets/fonts/prometo/puppy_md.woff')
+    format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
