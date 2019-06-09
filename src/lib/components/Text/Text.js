@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { TextGlobalStyles } from './Text.styles';
 
 const Text = ({
   color,
@@ -15,27 +14,29 @@ const Text = ({
 }) => {
   /* html tag defined dynamically */
   const Tag = `${tag}`;
+
+  const defaultStyles = {
+    transition: 'all 250ms'
+  };
   const textStyles = {
     color,
     fontSize,
     fontFamily,
     fontWeight,
+    ...defaultStyles,
     ...customStyles
   };
   const hoverTextStyles = { ...textStyles, ...hoverStyles };
   const [hovered, setHovered] = useState(false);
   return (
-    <>
-      <TextGlobalStyles textStyles={textStyles} hoverStyles={hoverStyles} />
-      <Tag
-        className={className}
-        style={hovered ? hoverTextStyles : textStyles}
-        onMouseOver={() => setHovered(true)}
-        onMouseOut={() => setHovered(false)}
-      >
-        {text}
-      </Tag>
-    </>
+    <Tag
+      className={className}
+      style={hovered ? hoverTextStyles : textStyles}
+      onMouseOver={() => setHovered(true)}
+      onMouseOut={() => setHovered(false)}
+    >
+      {text}
+    </Tag>
   );
 };
 
