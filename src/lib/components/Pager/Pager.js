@@ -7,6 +7,7 @@ const Pager = ({ activeColor, color, items, onClick }) => {
     <PagerContainer>
       {items.map(({ active }, index) => (
         <PagerItem
+          key={index}
           onClick={onClick}
           color={color}
           activeColor={activeColor}
