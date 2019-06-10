@@ -8,6 +8,7 @@ describe('<Text />', () => {
     it('should render', () => {
       const wrapper = shallow(<Text />);
       expect(wrapper).toBeDefined();
+      expect(wrapper).toMatchSnapshot();
     });
   });
 

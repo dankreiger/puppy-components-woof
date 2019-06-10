@@ -49,6 +49,10 @@ const RangeInputTrackDot = styled.span`
   height: 10px;
   border-radius: 50%;
   background: ${({ trackColor }) => trackColor};
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ styles */
+    display: none;
+  }
 `;
 
 export const RangeInputWrapper = styled.div``;

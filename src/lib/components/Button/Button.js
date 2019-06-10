@@ -1,12 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { ButtonStyled, ButtonLinkStyled } from './Button.styles';
-import {
-  puppyCyanHover,
-  puppyCyan,
-  puppyBlue,
-  puppyLightGray
-} from '../../shared/colors';
 
 const Button = ({
   className,
