@@ -1,5 +1,11 @@
 import styled from 'styled-components';
-import { puppyCyan, puppyLightGray } from '../../../shared/colors';
+import {
+  puppyCyan,
+  puppyCyanHover,
+  puppyBlue,
+  puppyLightGray,
+  puppyLightGrayAlpha
+} from '../../../shared/colors';
 
 export const RangeInputCompoundWrapper = styled.div`
   margin: 0 auto;
@@ -38,6 +44,14 @@ export const RangeInputHandleContainer = styled.div`
   height: 42px;
   cursor: pointer;
   background-color: transparent;
+  &:hover + div {
+    border-color: ${({ disabled }) =>
+      disabled ? puppyLightGray : puppyCyanHover};
+  }
+  &:active + div {
+    box-shadow: none;
+    border-color: ${({ disabled }) => (disabled ? puppyLightGray : puppyBlue)};
+  }
 `;
 
 export const RangeInputHandleSlider = styled.div.attrs(
@@ -58,7 +72,7 @@ export const RangeInputHandleSlider = styled.div.attrs(
   border: 15px solid
     ${({ disabled }) => (disabled ? puppyLightGray : puppyCyan)};
   border-radius: 50%;
-  box-shadow: 0px 0px 0px 1px ${puppyLightGray};
+  box-shadow: 0px 0px 0px 1px ${puppyLightGrayAlpha(0.5)};
   background-color: ${({ disabled }) => (disabled ? puppyLightGray : '#fff')};
 `;
 

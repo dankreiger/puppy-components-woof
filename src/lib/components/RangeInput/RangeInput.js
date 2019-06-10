@@ -13,7 +13,13 @@ import {
 } from './RangeInput.styles';
 import { useWindowWidth } from '../../hooks/useWindowWidth';
 import breakpoints from '../../shared/breakpoints';
-import { puppyCyan, puppyLightGray, puppyBlue } from '../../shared/colors';
+import {
+  puppyCyan,
+  puppyCyanHover,
+  puppyLightGrayAlpha,
+  puppyLightGray,
+  puppyBlue
+} from '../../shared/colors';
 
 const RangeInput = ({
   minLabelMobile,
@@ -26,7 +32,9 @@ const RangeInput = ({
   rangeValue,
   onInput,
   thumbColor,
+  thumbHoverColor,
   thumbActiveColor,
+  thumbBoxShadow,
   textColor,
   trackColor,
   handleCount,
@@ -65,7 +73,9 @@ const RangeInput = ({
             onInput={onInput}
             onChange={onInput} // also works
             thumbColor={thumbColor}
+            thumbHoverColor={thumbHoverColor}
             thumbActiveColor={thumbActiveColor}
+            thumbBoxShadow={thumbBoxShadow}
             trackColor={trackColor}
             disabled={disabled}
           />
@@ -118,7 +128,9 @@ RangeInput.defaultProps = {
   maxLabelDesktop: 'Important',
   thumbColor: puppyCyan,
   textColor: puppyCyan,
+  thumbHoverColor: puppyCyanHover,
   thumbActiveColor: puppyBlue,
+  thumbBoxShadow: puppyLightGrayAlpha(0.5),
   trackColor: puppyLightGray,
   disabled: false
 };

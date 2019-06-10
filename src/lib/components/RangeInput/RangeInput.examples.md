@@ -22,7 +22,7 @@ const App = () => {
 <App />;
 ```
 
-###### Compound Input Slider
+###### Compound Input Slider (Work in progress)
 
 
 ```js

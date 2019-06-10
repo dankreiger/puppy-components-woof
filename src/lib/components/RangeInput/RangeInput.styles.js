@@ -4,8 +4,10 @@ import { puppyCyan, puppyLightGray } from '../../shared/colors';
 const rangeInputStyles = (
   thumbColor,
   trackColor,
+  thumbHoverColor,
   thumbActiveColor,
-  disabled
+  disabled,
+  thumbBoxShadow
 ) => ({
   track: `
   background: ${trackColor};
@@ -23,10 +25,11 @@ const rangeInputStyles = (
   border-radius: 50%;
   background-color: ${disabled ? puppyLightGray : '#ffffff'};
   margin: 0;
-  box-shadow: ${trackColor} 0px 0px 0px 1px;
+  box-shadow: ${thumbBoxShadow} 0px 0px 0px 1px;
   transition: border-color 250ms;
   &:hover {
-    border-color: ${disabled ? puppyLightGray : thumbColor};
+    
+    border-color: ${disabled ? puppyLightGray : thumbHoverColor};
   }
   &:active {
     cursor: ${disabled ? 'not-allowed' : 'grabbing'};
@@ -104,16 +107,42 @@ export const RangeInputTrackSlider = styled.input.attrs(
 
   /* Webkit Track */
   &::-webkit-slider-runnable-track {
-    ${({ thumbColor, trackColor, thumbActiveColor, disabled }) =>
-      rangeInputStyles(thumbColor, trackColor, thumbActiveColor, disabled)
-        .track}
+    ${({
+      thumbColor,
+      trackColor,
+      thumbHoverColor,
+      thumbActiveColor,
+      disabled,
+      thumbBoxShadow
+    }) =>
+      rangeInputStyles(
+        thumbColor,
+        trackColor,
+        thumbHoverColor,
+        thumbActiveColor,
+        disabled,
+        thumbBoxShadow
+      ).track}
   }
 
   /* Webkit Thumb */
   &::-webkit-slider-thumb {
-    ${({ thumbColor, trackColor, thumbActiveColor, disabled }) =>
-      rangeInputStyles(thumbColor, trackColor, thumbActiveColor, disabled)
-        .thumb}
+    ${({
+      thumbColor,
+      trackColor,
+      thumbHoverColor,
+      thumbActiveColor,
+      disabled,
+      thumbBoxShadow
+    }) =>
+      rangeInputStyles(
+        thumbColor,
+        trackColor,
+        thumbHoverColor,
+        thumbActiveColor,
+        disabled,
+        thumbBoxShadow
+      ).thumb}
     margin-top: -20px;
     width: 40px;
     height: 40px;
@@ -123,28 +152,80 @@ export const RangeInputTrackSlider = styled.input.attrs(
   }
   /* Mozilla Track */
   &::-moz-range-track {
-    ${({ thumbColor, trackColor, thumbActiveColor, disabled }) =>
-      rangeInputStyles(thumbColor, trackColor, thumbActiveColor, disabled)
-        .track}
+    ${({
+      thumbColor,
+      trackColor,
+      thumbHoverColor,
+      thumbActiveColor,
+      disabled,
+      thumbBoxShadow
+    }) =>
+      rangeInputStyles(
+        thumbColor,
+        trackColor,
+        thumbHoverColor,
+        thumbActiveColor,
+        disabled,
+        thumbBoxShadow
+      ).track}
   }
   /* Mozilla Thumb */
   &::-moz-range-thumb {
-    ${({ thumbColor, trackColor, thumbActiveColor, disabled }) =>
-      rangeInputStyles(thumbColor, trackColor, thumbActiveColor, disabled)
-        .thumb}
+    ${({
+      thumbColor,
+      trackColor,
+      thumbHoverColor,
+      thumbActiveColor,
+      disabled,
+      thumbBoxShadow
+    }) =>
+      rangeInputStyles(
+        thumbColor,
+        trackColor,
+        thumbHoverColor,
+        thumbActiveColor,
+        disabled,
+        thumbBoxShadow
+      ).thumb}
   }
   /* Microsoft Track */
   &::-ms-track {
-    ${({ thumbColor, trackColor, thumbActiveColor, disabled }) =>
-      rangeInputStyles(thumbColor, trackColor, thumbActiveColor, disabled)
-        .track}
+    ${({
+      thumbColor,
+      trackColor,
+      thumbHoverColor,
+      thumbActiveColor,
+      disabled,
+      thumbBoxShadow
+    }) =>
+      rangeInputStyles(
+        thumbColor,
+        trackColor,
+        thumbHoverColor,
+        thumbActiveColor,
+        disabled,
+        thumbBoxShadow
+      ).track}
     color: transparent;
   }
   /* Microsoft Thumb */
   &::-ms-thumb {
-    ${({ thumbColor, trackColor, thumbActiveColor, disabled }) =>
-      rangeInputStyles(thumbColor, trackColor, thumbActiveColor, disabled)
-        .thumb}
+    ${({
+      thumbColor,
+      trackColor,
+      thumbHoverColor,
+      thumbActiveColor,
+      disabled,
+      thumbBoxShadow
+    }) =>
+      rangeInputStyles(
+        thumbColor,
+        trackColor,
+        thumbHoverColor,
+        thumbActiveColor,
+        disabled,
+        thumbBoxShadow
+      ).thumb}
     background-color: ${({ thumbColor, disabled }) =>
       disabled ? puppyLightGray : thumbColor};
   }

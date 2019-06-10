@@ -38,7 +38,11 @@ export function Handle({
 }) {
   return (
     <Fragment>
-      <RangeInputHandleContainer percent={percent} {...getHandleProps(id)} />
+      <RangeInputHandleContainer
+        disabled={disabled}
+        percent={percent}
+        {...getHandleProps(id)}
+      />
       <RangeInputHandleSlider
         ariaValuemin={min}
         ariaValuemax={max}
