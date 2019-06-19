@@ -21,6 +21,6 @@ import { Text } from 'puppy-components-woof';
 ```js
 import { Text } from 'puppy-components-woof';
 
-<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr" color="#00ABE7" fontSize="28px" hoverStyles={{color: 'inherit' }} />;
+<Text tag="h1" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr" color="#00ABE7" fontSize="28px" hoverStyles={{color: 'inherit' }} />;
 ```
 

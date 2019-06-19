@@ -13,8 +13,7 @@ const Text = ({
   hoverStyles
 }) => {
   /* html tag defined dynamically */
-  const Tag = `${tag}`;
-
+  const Tag = tag;
   const defaultStyles = {
     transition: 'all 250ms'
   };
@@ -59,6 +58,10 @@ Text.propTypes = {
   customStyles: PropTypes.object,
   /** Hover styles */
   hoverStyles: PropTypes.object
+};
+
+Text.defaultProps = {
+  tag: 'p'
 };
 
 export default Text;
