@@ -107,12 +107,8 @@ RangeInput.propTypes = {
   maxLabelDesktop: PropTypes.string,
   /** Color of slider thumb */
   thumbColor: PropTypes.string,
-  /** Hover color of slider thunb */
-  thumbHoverColor: PropTypes.string,
   /** Active color of slider thunb */
   thumbActiveColor: PropTypes.string,
-  /** Box shadow of slider thunb */
-  thumbBoxShadow: PropTypes.string,
   /** Color of slider text */
   textColor: PropTypes.string,
   /** Color of slider track */
