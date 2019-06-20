@@ -1,4 +1,4 @@
-Pager examples:
+Button examples:
 
 ###### color scheme
 

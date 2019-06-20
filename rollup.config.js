@@ -42,7 +42,7 @@ export default {
         '@babel/plugin-proposal-optional-chaining',
         '@babel/plugin-syntax-dynamic-import',
         '@babel/plugin-proposal-class-properties',
-        'transform-react-remove-prop-types',
+        'transform-react-remove-prop-types'
       ],
       exclude: 'node_modules/**'
     }),
@@ -53,7 +53,7 @@ export default {
           'isElement',
           'isValidElementType',
           'ForwardRef'
-        ],
+        ]
       }
     }),
     terser()

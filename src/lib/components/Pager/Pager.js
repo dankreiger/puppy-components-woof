@@ -1,14 +1,13 @@
 import React from 'react';
 import { PagerContainer, PagerItem } from './Pager.styles';
 import PropTypes from 'prop-types';
-import shortid from 'shortid';
 
 const Pager = ({ activeColor, color, items, onClick }) => {
   return (
     <PagerContainer>
       {items.map(({ active }, index) => (
         <PagerItem
-          key={shortid.generate()}
+          key={index}
           onClick={onClick}
           color={color}
           activeColor={activeColor}

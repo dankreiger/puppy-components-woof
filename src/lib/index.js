@@ -6,5 +6,3 @@ export { default as Text } from './components/Text';
 export { default as Button } from './components/Button';
 export { default as RangeInput } from './components/RangeInput';
 export { default as Pager } from './components/Pager';
-export { default as Counter } from './components/Counter';
-export { default as Checkbox } from './components/Checkbox';
